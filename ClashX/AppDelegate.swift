@@ -220,18 +220,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.isRunning = true
         print("Trying start proxy")
-        if let cstring = run() {
+//        if let cstring = run() {
 //            self.isRunning = false
-            let error = String(cString: cstring)
-            if (error != "success") {
-                NSUserNotificationCenter.default.postConfigErrorNotice(msg:error)
-            } else {
-                self.resetStreamApi()
-                self.selectOutBoundModeWithMenory()
-                self.selectAllowLanWithMenory()
-                self.selectProxyGroupWithMemory()
-            }
-        }
+//            let error = String(cString: cstring)
+//            if (error != "success") {
+//                NSUserNotificationCenter.default.postConfigErrorNotice(msg:error)
+//            } else {
+//                self.resetStreamApi()
+//                self.selectOutBoundModeWithMenory()
+//                self.selectAllowLanWithMenory()
+//                self.selectProxyGroupWithMemory()
+//            }
+//        }
 
     }
     
